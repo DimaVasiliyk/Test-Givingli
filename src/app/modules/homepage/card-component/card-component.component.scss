@@ -17,16 +17,16 @@
     box-shadow: 0px 8px 24px 0px #0000000d;
     border: 2px solid #eaeaea;
     border-radius: 5px;
+    align-items: center;
     .mat-image {
       width: 396px;
       height: 217px;
     }
     .card-text{
-      height: fit-content;
+      height: 30px;
       padding: 12px;
     }
     .card-content{
-      text-align: right;
       padding: 12px;
       .card-content-data{
         height: 30px;

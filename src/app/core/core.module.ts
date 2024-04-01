@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { NgxsModule, NoopNgxsExecutionStrategy } from '@ngxs/store';
 
-import { HomePageService } from './servise/homePage.service';
+import { HomePageService } from './serviсe/homePage.service';
 import { HomePageState } from './storage/store/homepage.state';
 
 
