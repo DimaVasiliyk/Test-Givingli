@@ -6,7 +6,6 @@ import { CoreModule } from "src/app/core/core.module";
 import { CardComponentComponent } from "./card-component/card-component.component";
 import { HomePageRoutingModule } from "./homepage-routing.module";
 import { HomepageComponent } from "./homepage.component";
-import { CustomDatePipe } from "./pipes/data.pipe";
 import { MaterialModule } from "src/app/shared/material.module";
 
 
@@ -22,7 +21,6 @@ import { MaterialModule } from "src/app/shared/material.module";
   declarations: [
     HomepageComponent,
     CardComponentComponent,
-    CustomDatePipe
   ]
 })
 export class HomepageModule { }
