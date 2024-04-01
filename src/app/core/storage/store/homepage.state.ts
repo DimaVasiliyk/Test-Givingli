@@ -31,7 +31,6 @@ export class HomePageState {
   @Action(GetAllGifs)
   public getAllGif(ctx: StateContext<HomepageStateModel>) {
     this.homePageService.getAllGifs().subscribe((data: Array<GiphyItem>) => {
-      console.log(data,"data");
       ctx.patchState({
         gifs: data,
       });
