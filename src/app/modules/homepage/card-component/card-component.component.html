@@ -1,0 +1,17 @@
+<div class="loading" *ngIf="!(gifs$ | async)?.length">
+  <mat-spinner></mat-spinner>
+</div>
+
+<div class="card-wrapper">
+  <mat-card class="card" *ngFor="let gif of (gifs$ | async)">
+    <span class="card-text">
+      {{gif.title}}
+    </span>
+    <img mat-card-image class="mat-image" src="{{gif.images.downsized.url}}">
+    <mat-card-content class="card-content">
+      <span class="card-content-data">
+        {{gif.import_datetime | customDate :"MMMM d, yyyy"}}
+      </span>
+    </mat-card-content>
+  </mat-card>
+</div>
