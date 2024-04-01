@@ -1,3 +1,4 @@
 export const environment = {
-    API_KEY: 'GS3gzUS0iTUI2ra9NZY8a6jGCS9KJ4T7',
+    API_KEY: 'j7AwUJivZUKvYBwnJyCPTZO4WpXRrC01',
+    baseUrl:'https://api.giphy.com/v1/gifs/',
 };

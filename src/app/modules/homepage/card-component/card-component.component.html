@@ -7,10 +7,10 @@
     <span class="card-text">
       {{gif.title}}
     </span>
-    <img mat-card-image class="mat-image" src="{{gif.images.downsized.url}}">
+    <img mat-card-image class="mat-image" src="{{gif.url}}">
     <mat-card-content class="card-content">
       <span class="card-content-data">
-        {{gif.import_datetime | date:'MMM dd, yyyy'}}
+        {{gif.datetime | date:'MMM dd, yyyy'}}
       </span>
     </mat-card-content>
   </mat-card>

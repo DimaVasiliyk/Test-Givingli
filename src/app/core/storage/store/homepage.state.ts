@@ -30,18 +30,19 @@ export class HomePageState {
 
   @Action(GetAllGifs)
   public getAllGif(ctx: StateContext<HomepageStateModel>) {
-    this.homePageService.getAllGifs().subscribe((data: any) => {
+    this.homePageService.getAllGifs().subscribe((data: Array<GiphyItem>) => {
+      console.log(data,"data");
       ctx.patchState({
-        gifs: data.data,
+        gifs: data,
       });
     });
   }
 
   @Action(GetSearchGif)
   public getSearchGif(ctx: StateContext<HomepageStateModel>, { letter }: GetSearchGif) {
-    this.homePageService.getSearchGif(letter).subscribe((data: GiphyResponse) => {
+    this.homePageService.getSearchGif(letter).subscribe((data: Array<GiphyItem>) => {
       ctx.patchState({
-        gifs: data.data
+        gifs: data
       });
     });
   }

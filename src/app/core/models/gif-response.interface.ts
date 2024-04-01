@@ -11,25 +11,23 @@ export interface GiphyPagination {
 }
 
 export interface GiphyResponse {
-    data: GiphyItem[];
+    data: GiphyItemResponse[];
     meta: GiphyMeta;
     pagination: GiphyPagination;
 }
 
 
-export interface GiphyItem {
-    type: string;
-    id: string;
+export interface GiphyItemResponse {
+    import_datetime: Date;
     title: string;
     url: string;
     images: {
-        original: GiphyImage;
+        downsized: any;
     };
 }
 
-export interface GiphyImage {
-    height: string;
-    width: string;
-    size: string;
+export interface GiphyItem {
+    datetime: Date;
+    title: string;
     url: string;
 }
